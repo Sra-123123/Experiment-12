@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DevOps Lifecycle - Vertical Layout</title>
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      font-family: Arial, sans-serif;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #38bdf8;
+      margin-bottom: 50px;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .stage {
+      background-color: #1e293b;
+      border-left: 5px solid #38bdf8;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      text-align: left;
+      position: relative;
+    }
+
+    .stage::before {
+      content: '';
+      position: absolute;
+      left: -13px;
+      top: 20px;
+      width: 10px;
+      height: 10px;
+      background: #38bdf8;
+      border-radius: 50%;
+      border: 2px solid #1e293b;
+    }
+
+    .stage-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-style: italic;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔽 DevOps Lifecycle</h1>
+
+  <div class="timeline">
+    <div class="stage"><span class="stage-title">1. Plan</span><br>Define project goals, scope, and requirements.</div>
+    <div class="stage"><span class="stage-title">2. Develop</span><br>Write and commit code collaboratively.</div>
+    <div class="stage"><span class="stage-title">3. Build</span><br>Compile and package code into build artifacts.</div>
+    <div class="stage"><span class="stage-title">4. Test</span><br>Run automated and manual tests.</div>
+    <div class="stage"><span class="stage-title">5. Release</span><br>Prepare builds for production release.</div>
+    <div class="stage"><span class="stage-title">6. Deploy</span><br>Push builds to production environments.</div>
+    <div class="stage"><span class="stage-title">7. Operate</span><br>Ensure application runs smoothly and efficiently.</div>
+    <div class="stage"><span class="stage-title">8. Monitor</span><br>Track performance, errors, and user feedback.</div>
+  </div>
+
+  <div class="footer">
+    DevOps is a continuous, repeatable process that enhances software delivery and operations.
+  </div>
+
+</body>
+</html>
