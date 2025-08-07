@@ -2,79 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>DevOps Lifecycle - Vertical Layout</title>
+  <title>DevOps Lifecycle Flowchart</title>
   <style>
     body {
-      background-color: #0f172a;
-      color: #f1f5f9;
       font-family: Arial, sans-serif;
-      padding: 40px 20px;
+      background-color: #f1f5f9;
+      padding: 40px;
       text-align: center;
     }
 
     h1 {
-      color: #38bdf8;
-      margin-bottom: 50px;
+      color: #0f172a;
+      margin-bottom: 40px;
     }
 
-    .timeline {
-      position: relative;
-      max-width: 500px;
+    .flowchart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      max-width: 400px;
       margin: auto;
     }
 
-    .stage {
-      background-color: #1e293b;
-      border-left: 5px solid #38bdf8;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 5px;
-      text-align: left;
-      position: relative;
-    }
-
-    .stage::before {
-      content: '';
-      position: absolute;
-      left: -13px;
-      top: 20px;
-      width: 10px;
-      height: 10px;
-      background: #38bdf8;
-      border-radius: 50%;
-      border: 2px solid #1e293b;
-    }
-
-    .stage-title {
-      font-size: 18px;
+    .box {
+      background-color: #2563eb;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 10px;
       font-weight: bold;
+      font-size: 18px;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .arrow {
+      font-size: 24px;
+      color: #1e293b;
     }
 
     .footer {
-      margin-top: 50px;
+      margin-top: 40px;
       font-style: italic;
-      color: #94a3b8;
+      color: #475569;
+    }
+
+    @media (max-width: 600px) {
+      .box {
+        font-size: 16px;
+        padding: 12px 24px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>🔽 DevOps Lifecycle</h1>
+  <h1>🔁 DevOps Lifecycle Flowchart</h1>
 
-  <div class="timeline">
-    <div class="stage"><span class="stage-title">1. Plan</span><br>Define project goals, scope, and requirements.</div>
-    <div class="stage"><span class="stage-title">2. Develop</span><br>Write and commit code collaboratively.</div>
-    <div class="stage"><span class="stage-title">3. Build</span><br>Compile and package code into build artifacts.</div>
-    <div class="stage"><span class="stage-title">4. Test</span><br>Run automated and manual tests.</div>
-    <div class="stage"><span class="stage-title">5. Release</span><br>Prepare builds for production release.</div>
-    <div class="stage"><span class="stage-title">6. Deploy</span><br>Push builds to production environments.</div>
-    <div class="stage"><span class="stage-title">7. Operate</span><br>Ensure application runs smoothly and efficiently.</div>
-    <div class="stage"><span class="stage-title">8. Monitor</span><br>Track performance, errors, and user feedback.</div>
+  <div class="flowchart">
+    <div class="box">Plan</div>
+    <div class="arrow">↓</div>
+    <div class="box">Develop</div>
+    <div class="arrow">↓</div>
+    <div class="box">Build</div>
+    <div class="arrow">↓</div>
+    <div class="box">Test</div>
+    <div class="arrow">↓</div>
+    <div class="box">Release</div>
+    <div class="arrow">↓</div>
+    <div class="box">Deploy</div>
+    <div class="arrow">↓</div>
+    <div class="box">Operate</div>
+    <div class="arrow">↓</div>
+    <div class="box">Monitor</div>
   </div>
 
   <div class="footer">
-    DevOps is a continuous, repeatable process that enhances software delivery and operations.
+    The DevOps lifecycle is a continuous flow from planning to monitoring and back again.
   </div>
 
 </body>
 </html>
+
